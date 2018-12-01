@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="reset-stylesheet" type="text/css" href="assets/css/reset.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body><div class ="wholebody">
+    <div class="container-head">
+        <h1>Crystals Collector!!</h1> <span id="crystal-title"></span></h1>
+    </div>
+    <div class="container-body">
+        <div class="body">
+            <p><strong>
+                You will be given a random number at the start of the game.
+            </p>
+            <P>
+                There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                your total score.
+            </P>
+            <p>
+                You win the game by matching your total score to random number, you lose the game if your total score
+                goes above the random number.
+            </p>
+            <p>
+                The value of each crystal is hidden from you until you click on it.
+            </p>
+            <p>
+                Each time when the game starts, the game will change the values of each crystal.
+            </strong>
+            </p>
+        </div>
+
+        <div id="randomNumber">
+            
+
+        </div>
+        <div class="container-total">
+            <p id="totalWins">
+                Wins:
+            </p>
+            <p id="totalLoses">
+                Loses:
+            </p>
+        </div>
+
+    </div>
+    <br>
+    <div class="container-crystals" id="crystals">
+
+        <img class="crystal-one" id="purple" src="assets/images/crystal1.png" alt="crystals">
+        <img class="crystal-two" id="green" src="assets/images/crystal2.png" alt="crystals">
+        <img class="crystal-three" id="pink" src="assets/images/crystal3.png" alt="crystals">
+        <img class="crystal-four" id="yellow" src="assets/images/crystal4.png" alt="crystals">
+    </div>
+
+
+    <p>
+        <!-- Your total score is: -->
+    </p>
+    <div id="totalScore">
+    </div>
+
+
+
+
+
+
+
+    
+
+</body>
+</div>
+</html>
