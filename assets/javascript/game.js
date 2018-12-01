@@ -13,11 +13,10 @@ var addingNumbers = 0;
 var crystalNumber =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 var wins = 0;
 var loses = 0;
-// var targetNumber = []
+
 
 var randomNumberGenerated = randomRange(19, 120);
 randomNumber.text(randomNumberGenerated);
-// document.getElementById("randomNumber").style.fontSize = "xx-large";
 $("#randomNumber").text('Target Score: ' + randomNumberGenerated);
 $("#totalScore").text('Your Total Score is: ' + "0") 
 
@@ -48,8 +47,6 @@ function randomRange (myMin, myMax){
     return Math.floor(Math.random() * (myMax - myMin +1)) + myMin ;
     // console.log
 }
-
-  
 
 // Giving the crystals their numbers
 
@@ -86,31 +83,15 @@ function checkWin (){
 
     if (addingNumbers === randomNumberGenerated){
         wins ++;
-        // alert("You Win");
-        // $("totalWins").text("Wins:" + wins);
         totalWins.text ("Wins:" + wins);
-        // addingNumbers = 0;
-        // $("#randomNumber").text('Target Score: ' + randomNumberGenerated);
         setGame();
     }
     else if (addingNumbers > randomNumberGenerated){
         loses ++;
-        // alert("You Lose"); 
         totalLoses.text ("Loses: " + loses); 
-        // addingNumbers = 0; 
-        // $("#randomNumber").text('Target Score: ' + randomNumberGenerated);
         setGame();   
     }
     
 }
-
-// function setGame (myMin, myMax){
-//         return Math.floor(Math.random() * (myMax - myMin +1)) + myMin ;
-//         console.log
-// randomNumber.textContent = randomRange;
-// }
-
-
-// updateDom( )
 
 });
